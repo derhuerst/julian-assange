@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html><head>
+	<meta charset="utf-8">
+	<title>Julian Assange in the Ecuadorian embassy</title>
+	<meta name="description" content="For how long is Julian Assange in the Ecuadorian embassy already?">
+	<meta name="author" content="Jannis R <mail@jannisr.de>">
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body {
+			margin: 30vh 1em 1em 1em; padding: 0;
+			font-size: 130%; font-size: calc(2.5vw);
+			font-family: "Helvetica Neue", Helvetica, sans-serif;
+			text-align: center }
+		a { color: #1970a9; text-decoration: none }
+		a:hover { text-decoration: underline }
+		p#counter { font-size: 3rem }
+	</style>
+</head><body>
+	<p><a href="https://en.wikipedia.org/wiki/Julian_Assange">Julian Assange</a> is in the Ecuadorian embassy <a href="http://www.theguardian.com/media/2012/jun/19/julian-assange-wikileaks-asylum-ecuador">since <strong>19th of June 2012</strong></a>.</p>
+	<p id="counter" style="display: none"></p>
+	<script type="application/javascript" src="moment.min.js"></script>
+	<script type="application/javascript">
+		'use strict'
+		const days = moment().diff(moment('2012-06-19'), 'days')
+		const counter = document.querySelector('#counter')
+		counter.innerHTML = `<strong>That's ${days} days.</strong>`
+		counter.style.display = 'block'
+	</script>
+</body>
+</html>
